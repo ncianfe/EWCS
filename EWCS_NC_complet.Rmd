@@ -3,13 +3,9 @@ title: "Les dimensions de la qualité du travail"
 author: Apprendre R Studio avec l'Enquête européenne sur les conditions de travail (EWCS)
 date: "Nicola Cianferoni, sémestre de printemps 2020, Université de Genève"
 output:
-  pdf_document:
-    fig_caption: yes
-    number_sections: yes
-    latex_engine: xelatex
-  word_document: default
-lang: fr
-in_header: \usepackage[french]{babel} \documentclass{article} \begin{document} \end{document}
+  github_document:
+    toc: true
+    toc_depth: 3
 ---
 
 \begin{figure}[h!]
@@ -951,7 +947,7 @@ Dans certains cas, il faut considérer les champs vides comme des NA
 
 - Exemple: espace vide lors les personnes n'ont pas répondu
 
-```{r}
+```{r, eval = FALSE}
 
 # Exemple: remplacer les champs vide en NA dans toute la base de données EWCS
 
